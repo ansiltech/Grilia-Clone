@@ -175,4 +175,6 @@ it is necessary to migrate it in the db.
 
 The stats() function is for retrieving module statistics, eg number of users, number of chats. This is accessed 
 through the /stats command, which is only available to the bot owner.
-[![TeleGram Group](https://t.me/ansiltechteam)]
+Support
+   <a href="https://t.me/AnsilTech_official"><img src="https://img.shields.io/badge/Channel%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
+   <a href="https://t.me/ansiltechteam"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
