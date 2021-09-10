@@ -87,7 +87,7 @@ for module_name in ALL_MODULES:
     if hasattr(imported_module, "__user_info__"):
         USER_INFO.append(imported_module)
 
-if hasattr(imported_module, "__import_data__"):
+    if hasattr(imported_module, "__import_data__"):
         DATA_IMPORT.append(imported_module)
 
     if hasattr(imported_module, "__export_data__"):
@@ -113,7 +113,7 @@ def send_help(chat_id, text, keyboard=None):
 @run_async
 def test(bot: Bot, update: Update):
     # pprint(eval(str(update)))
-    # update.effective_message.reply_text("Hola tester! _I_ *have* markdown", parse_mode=ParseMode.MARKDOWN)
+    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
 
@@ -192,7 +192,7 @@ def help_button(bot: Bot, update: Update):
                                      reply_markup=InlineKeyboardMarkup(
                                          [[InlineKeyboardButton(text="Back", callback_data="help_back")]]))
 
-elif prev_match:
+        elif prev_match:
             curr_page = int(prev_match.group(1))
             query.message.reply_text(HELP_STRINGS,
                                      parse_mode=ParseMode.MARKDOWN,
@@ -275,6 +275,7 @@ def send_settings(chat_id, user_id, user=False):
                                                  "in a group chat you're admin in to find its current settings!",
                                         parse_mode=ParseMode.MARKDOWN)
 
+
 @run_async
 def settings_button(bot: Bot, update: Update):
     query = update.callback_query
@@ -348,8 +349,7 @@ def get_settings(bot: Bot, update: Update):
     args = msg.text.split(None, 1)
 
     # ONLY send settings in PM
-
-if chat.type != chat.PRIVATE:
+    if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
             text = "Click here to get this chat's settings, as well as yours."
             msg.reply_text(text,
@@ -429,7 +429,7 @@ def main():
 
     # dispatcher.add_error_handler(error_callback)
 
-    if WEBHOOK:/get notename
+    if WEBHOOK:
         LOGGER.info("Using webhooks.")
         updater.start_webhook(listen="0.0.0.0",
                               port=PORT,
@@ -448,6 +448,6 @@ def main():
     updater.idle()
 
 
-if name == '__main__':
+if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     main()
