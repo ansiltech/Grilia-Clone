@@ -2,7 +2,6 @@
 {
   "name": "Grilia_Chechi",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
-  "repository": "https://github.com/ansiltech/Grilia",
   "logo": "https://telegra.ph/file/bfd846b425764cab4bbff.jpg",
   "keywords": [
     "telegram",
@@ -11,6 +10,7 @@
     "manager",
     "3"
   ],
+  "repository": "https://github.com/ansil
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables",
