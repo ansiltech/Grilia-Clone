@@ -1,7 +1,8 @@
 
 {
-  "name": "Marie_Chechi2.0",
+  "name": "Grilia_Chechi",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
+  "logo": "https://telegra.ph/file/bfd846b425764cab4bbff.jpg",
   "keywords": [
     "telegram",
     "best",
@@ -9,7 +10,7 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/ansiltech/Grilia",
+  "repository": "https://github.com/ansiltech/grilia",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables",
@@ -21,11 +22,11 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "683538773"
+      "value": "1759920879"
     },
     "OWNER_USERNAME": {
       "description": "Your username",
-      "value": "ViruZs"
+      "value": "nsilvpo"
     },
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
@@ -41,15 +42,15 @@
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
-      "value": "254318997 683538773 570400686 466337795"
+      "value": "1759920879 1171720167"
     },
     "SUPPORT_USERS": {
       "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
-      "value": "254318997 683538773 570400686 466337795"
+      "value": "1759920879 1171720167"
     },
     "WHITELIST_USERS": {
       "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
-      "value": "254318997 683538773 570400686 466337795"
+      "value": "1759920879 1171720167"
     },
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations.",
